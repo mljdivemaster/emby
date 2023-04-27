@@ -16,7 +16,7 @@ owner = admin
 version = 8.0.5
 modtime = 1594905077.204484800
 
-[inputs/monitor%3A%2F%2FC%3A%5CUsers%5Cmljdi%5CAppData%5CRoaming%5CEmby-Server%5Cprogramdata%5Clogs%5Cembyserver.txt]
+[inputs/monitor%3A%2F%2FC%3A%5CUsers%5CAppData%5CRoaming%5CEmby-Server%5Cprogramdata%5Clogs%5Cembyserver.txt]
 owner = admin
 version = 8.0.5
 modtime = 1594905086.355187900
