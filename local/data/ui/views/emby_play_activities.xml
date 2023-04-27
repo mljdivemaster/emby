@@ -1,0 +1,67 @@
+<form version="1.1">
+  
+  <label>Emby play activities</label>
+  <fieldset submitButton="false" autoRun="true">
+    <input type="time" token="time_token" searchWhenChanged="true">
+      <label>Select timerange</label>
+      <default>
+        <earliest>-7d@h</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <title>Top media</title>
+      <chart>
+        <search>
+          <query>index=emby sourcetype=emby_server component=SessionManager log_level=Info Playback start reported by app
+| top media</query>
+          <earliest>$time_token.earliest$</earliest>
+          <latest>$time_token.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="charting.chart">pie</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Top app used for playback</title>
+      <chart>
+        <search>
+          <query>index=emby sourcetype=emby_server component=SessionManager log_level=Info Playback start reported by app
+| top app</query>
+          <earliest>$time_token.earliest$</earliest>
+          <latest>$time_token.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="charting.chart">pie</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>overview</title>
+      <table>
+        <search>
+          <query>index=emby sourcetype=emby_server component=SessionManager log_level=Info Playback start reported by app
+| table _time app media</query>
+          <earliest>$time_token.earliest$</earliest>
+          <latest>$time_token.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">20</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+</form>

@@ -1,0 +1,262 @@
+[app/ui]
+version = 8.0.5
+modtime = 1594904912.421039700
+
+[app/launcher]
+version = 8.0.5
+modtime = 1594904912.424033700
+
+[indexes/emby]
+owner = admin
+version = 9.0.4
+modtime = 1677934656.878139400
+
+[props/emby_server]
+owner = admin
+version = 8.0.5
+modtime = 1594905077.204484800
+
+[inputs/monitor%3A%2F%2FC%3A%5CUsers%5Cmljdi%5CAppData%5CRoaming%5CEmby-Server%5Cprogramdata%5Clogs%5Cembyserver.txt]
+owner = admin
+version = 8.0.5
+modtime = 1594905086.355187900
+
+[props/emby_server/EXTRACT-log_level]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 8.0.5
+modtime = 1594905194.755603100
+
+[props/emby_server/EXTRACT-component]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 8.0.5
+modtime = 1594905259.011710800
+
+[views/scanning_activity]
+owner = admin
+version = 9.0.4
+modtime = 1677237667.366433700
+
+[inputs/splunktcp%3A%2F%2F9997]
+owner = admin
+version = 8.1.0
+modtime = 1605857886.800948500
+
+[props/emby_server/EXTRACT-EmbyVersion]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.0
+modtime = 1672929144.463157500
+
+[inputs/udp%3A%2F%2F192.168.1.153%3A516]
+owner = admin
+version = 9.0.3
+modtime = 1673279578.913493100
+
+[props/emby_server/EXTRACT-conversion_time]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1677238045.795591900
+
+[props/emby_server/EXTRACT-subtitle]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1677238399.004543500
+
+[views/subtitles_operations]
+owner = admin
+version = 9.0.4
+modtime = 1682149800.922543200
+
+[props/emby_server/EXTRACT-user]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678439981.921824600
+
+[views/emby_play_activities]
+owner = admin
+version = 9.0.4
+modtime = 1682584781.457261100
+
+[views/emby_user_activities]
+owner = admin
+version = 9.0.4
+modtime = 1681381680.349520200
+
+[eventtypes/emby_login_success]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678442959.862935200
+
+[tags/eventtype%3Demby_login_success]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678442959.882362300
+
+[eventtypes/emby_logon_failed]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678442966.937696200
+
+[tags/eventtype%3Demby_logon_failed]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678442966.964889800
+
+[eventtypes/emby_restart]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678443180.216323900
+
+[tags/eventtype%3Demby_restart]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678443180.307955000
+
+[eventtypes/emby_startup_complete]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678443172.541267400
+
+[tags/eventtype%3Demby_startup_complete]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678443172.649907700
+
+[eventtypes/emby_stopped]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678443187.903928700
+
+[tags/eventtype%3Demby_stopped]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678443187.995273400
+
+[props/emby_server/EXTRACT-LiberyMonitorAction]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678443389.768475900
+
+[props/emby_server/EXTRACT-app]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678443396.622014100
+
+[props/emby_server/EXTRACT-code]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678443403.108904800
+
+[props/emby_server/EXTRACT-file]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678443416.143783700
+
+[props/emby_server/EXTRACT-get%2Curl]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678443423.185847200
+
+[props/emby_server/EXTRACT-media]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678443430.087746400
+
+[props/emby_server/EXTRACT-play_point]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1678443437.060776100
+
+[props/emby_server/EXTRACT-message]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1679498518.524459300
+
+[eventtypes/emby_login_denied]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1680508979.855179600
+
+[tags/eventtype%3Demby_login_denied]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1680508979.865237800
+
+[eventtypes/emby_client_sync]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1682584141.572303100
+
+[tags/eventtype%3Demby_client_sync]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1682584141.594196800
+
+[props/emby_server/EXTRACT-method%2C%20url%2C%20http_user_agent]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1682584157.769484300
+
+[props/emby_server/EXTRACT-method%2Ccode%2Csrc_ip%2Cduration%2Curl]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1682584225.650154600
