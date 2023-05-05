@@ -14,8 +14,8 @@
       <title>Overview</title>
       <table>
         <search>
-          <query>tag=emby tag=authentication
-| table _time user eventtype</query>
+          <query>tag=emby (tag=authentication OR tag=client_sync)
+| table _time user src_ip eventtype</query>
           <earliest>$field1.earliest$</earliest>
           <latest>$field1.latest$</latest>
           <sampleRatio>1</sampleRatio>
