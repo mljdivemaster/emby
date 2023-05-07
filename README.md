@@ -1,4 +1,5 @@
 Splunk app for Emby
+
 This app is found on Splunkbase:
 https://splunkbase.splunk.com/app/6874
 
