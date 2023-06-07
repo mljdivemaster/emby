@@ -15,7 +15,8 @@
       <table>
         <search>
           <query>tag=emby (tag=authentication OR tag=client_sync)
-| table _time user src_ip eventtype</query>
+| table _time user src_ip token eventtype
+| sort 0 _time</query>
           <earliest>$field1.earliest$</earliest>
           <latest>$field1.latest$</latest>
           <sampleRatio>1</sampleRatio>
