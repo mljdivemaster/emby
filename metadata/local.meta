@@ -91,7 +91,7 @@ modtime = 1682584781.457261100
 [views/emby_user_activities]
 owner = admin
 version = 9.0.4
-modtime = 1681381680.349520200
+modtime = 1683475993.952520900
 
 [eventtypes/emby_login_success]
 access = read : [ * ], write : [ admin ]
@@ -238,14 +238,14 @@ access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 9.0.4
-modtime = 1682584141.572303100
+modtime = 1683474973.217738500
 
 [tags/eventtype%3Demby_client_sync]
 access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 9.0.4
-modtime = 1682584141.594196800
+modtime = 1683474973.310680600
 
 [props/emby_server/EXTRACT-method%2C%20url%2C%20http_user_agent]
 access = read : [ * ], write : [ admin ]
@@ -260,3 +260,31 @@ export = none
 owner = admin
 version = 9.0.4
 modtime = 1682584225.650154600
+
+[savedsearches/Failed%20authgentication]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 9.1.0.1
+modtime = 1688978651.981112400
+
+[props/emby_server/EXTRACT-src]
+access = read : [ * ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1686120961.006546600
+
+[props/emby_server/EXTRACT-token]
+access = read : [ * ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1686120968.670241700
+
+[props/emby_server/EXTRACT-method]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 9.0.4
+modtime = 1688246001.749736500
